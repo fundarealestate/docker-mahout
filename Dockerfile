@@ -21,7 +21,7 @@ RUN echo "oracle-java8-installer shared/accepted-oracle-license-v1-1 select true
 RUN echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" > /etc/apt/sources.list.d/webupd8team-java-trusty.list
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
 RUN apt-get update && \
-  apt-get install -y --no-install-recommends oracle-java8-installer bzip2 python2.7 && \
+  apt-get install -y --no-install-recommends oracle-java8-installer bzip2 python2.7 unzip p7zip-full && \
   apt-get clean all
 
 # Define versions and paths
