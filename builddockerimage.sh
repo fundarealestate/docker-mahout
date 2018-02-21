@@ -17,7 +17,7 @@ echo "Building image '$IMAGE_NAME'"
 
 # BUILD THE IMAGE (replace all environment variables)
 BUILD_START=$(date '+%s')
-docker build --force-rm=true --no-cache=true -t $IMAGE_NAME -f dockerfile ./ || {
+docker build -t $IMAGE_NAME -f dockerfile ./ || {
 	echo "There was an error building the image."
 	read -p "Press any key to continue... " -n1 -s
 	exit 1
