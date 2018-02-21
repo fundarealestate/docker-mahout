@@ -10,7 +10,7 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 chmod 0600 ~/.ssh/authorized_keys
 ssh-keyscan -H localhost >> ~/.ssh/known_hosts
 ssh-keyscan -H 0.0.0.0 >> ~/.ssh/known_hosts
-# Start yarn and history server
-start-yarn.sh && mr-jobhistory-daemon.sh start historyserver
+# Start dfs, yarn and history server
+start-dfs.sh && start-yarn.sh && mr-jobhistory-daemon.sh start historyserver
 
 exec "$@"
