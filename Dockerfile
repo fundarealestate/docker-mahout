@@ -32,6 +32,7 @@ ENV HIVE_VERSION 1.2.2
 ENV HADOOP_HOME /usr/local/hadoop-${HADOOP_VERSION}
 ENV MAHOUT_HOME /usr/local/apache-mahout-distribution-${MAHOUT_VERSION}
 ENV MAHOUT_LOCAL true
+ENV HADOOP_STREAMING_JAR ${HADOOP_HOME}/share/hadoop/tools/lib/hadoop-streaming-${HADOOP_VERSION}.jar
 
 WORKDIR /tmp
 
