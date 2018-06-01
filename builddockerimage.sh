@@ -23,7 +23,7 @@ docker build -t $IMAGE_NAME -f dockerfile ./ || {
 	exit 1
 }
 BUILD_END=$(date '+%s')
-BUILD_ELAPSED=`expr $BUILD_END - $BUILD_START`
+BUILD_ELAPSED=$(($BUILD_END - $BUILD_START))
 
 echo ""
 if [ $? -eq 0 ]; then
