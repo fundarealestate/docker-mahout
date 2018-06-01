@@ -1,3 +1,5 @@
+#!/usr/bin/env
+
 usage() {
 cat << EOF
 Usage: builddockerimage.sh
