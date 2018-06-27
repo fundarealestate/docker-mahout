@@ -88,7 +88,7 @@ RUN /etc/my_init.d/00_regen_ssh_host_keys.sh
 # http://www.cloudera.com/content/cloudera/en/documentation/core/latest/topics/cdh_ig_ports_cdh5.html
 EXPOSE 9000 50070 50010 50020 50075 50090 9021
 
-# Setup python3.5 as default python
+# Setup python 2.7 as default python
 RUN ln -s /usr/bin/python2.7 /usr/bin/python
 
 # cleanup temp and cache files
